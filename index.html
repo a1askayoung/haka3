@@ -8,17 +8,248 @@
     <title>hakathon3</title>
   </head>
   <body>
-    <header class="header">
+    <!-- header -->
+
+    <header>
       <div class="container">
-        <ul>
-          <li class=""><a href="#"></a> Home</li>
-          <li class=""><a href="#"></a> Home</li>
-          <li class=""><a href="#"></a> Home</li>
-          <li class=""><a href="#"></a> Home</li>
-          <li class=""><a href="#"></a> Home</li>
-        </ul>
+        <div class="logo">
+          <img src="./img/lg-removebg-preview.png" alt="Logo" />
+        </div>
+        <nav class="navbar">
+          <div class="header-nav">
+            <div class="links">
+              <ul class="nav">
+                <li class="nav__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Products</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Contact us</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="button">
+              <input
+                type="text"
+                id="search"
+                class="search"
+                placeholder="search"
+              />
+              <button class="btn" id="btn-search">search</button>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <img
+        class="bg"
+        src="https://rare-gallery.com/uploads/posts/4596007-music-speakers.jpg"
+        alt=""
+      />
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper-left">
+            <div class="main-text">
+              <h1 class="text-title">
+                Music Store: Your One-Stop Shop for All Things Music
+              </h1>
+              <p class="title-description">
+                Music Store is your ultimate destination for all your music
+                needs. We offer a wide selection of musical instruments,
+                accessories, sheet music, and more at affordable prices. Our
+                knowledgeable staff is always available to assist you with any
+                questions or concerns you may have. Shop with us and take your
+                love for music to the next level!
+              </p>
+              <button class="btn" id="btn-login">Log In</button>
+            </div>
+          </div>
+
+          <div class="wrapper-right">
+            <div class="categories">
+              <div class="categories-card">
+                <img
+                  src="https://i.pinimg.com/564x/20/72/52/2072524dc821bc0f59c3d31dbcf2a1d4.jpg"
+                  alt=""
+                />
+                <p>High-quality audio output devices.</p>
+              </div>
+              <div class="categories-card">
+                <img
+                  src="https://i.pinimg.com/564x/8f/b1/b8/8fb1b818d1fb470fc03a13b3987dc90e.jpg"
+                  alt=""
+                />
+                <p>Original branded string instruments.</p>
+              </div>
+              <div class="categories-card">
+                <img
+                  src="https://i.pinimg.com/564x/f6/b9/95/f6b995a138ece64f5044f5e74ae81f4c.jpg"
+                  alt=""
+                />
+                <p>Different types of keyboard instruments.</p>
+              </div>
+              <div class="categories-card">
+                <img
+                  src="https://i.pinimg.com/564x/cb/4b/97/cb4b973f16f4fab4ff195608202f9ff8.jpg"
+                  alt=""
+                />
+                <p>sound recording devices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="page">
+      <div class="container">
+        <div class="card list">
+          <div class="card-img">
+            <img
+              src="https://i.pinimg.com/564x/53/a3/7a/53a37afac132d5df19b2450994f9020a.jpg"
+              alt="Music Album Cover"
+            />
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Album Title</h2>
+            <p class="card-artist">Artist Name</p>
+            <div class="card-rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div id="contact" class="footer">
+        <div class="container">
+          <div class="footer-item">
+            <p class="footer_text">here you can find me</p>
+            <div class="soc_links"></div>
+
+            <p class="end">© d4rax, Inc. 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
+
+<form id="add-form" class="add-form">
+  <h2>Admin panel</h2>
+  <input
+    type="text"
+    class="mb-2 w-50 form-control inp"
+    placeholder="title"
+    id="name"
+  />
+  <input
+    type="text"
+    class="mb-2 w-50 form-control inp"
+    placeholder="price"
+    id="price"
+  />
+  <input
+    type="text"
+    class="mb-2 w-50 form-control inp"
+    placeholder="description"
+    id="desc"
+  />
+  <input
+    type="text"
+    class="mb-2 w-50 form-control inp"
+    placeholder="image URL"
+    id="image"
+  />
+
+  <button>Add product</button>
+</form>
+<!-- form to add product ends -->
+
+<!-- product list for rendering us adding products -->
+<div id="products-list" class="d-flex flex-wrap justify-content-center"></div>
+
+<!-- modal window for edit starts -->
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column w-100 align-items-center admin">
+          <h2>Edit product</h2>
+          <input type="text" id="" class="modal-name" placeholder="edit name" />
+          <input
+            type="text"
+            id="edit-price"
+            class="modal-desc"
+            placeholder="edit description"
+          />
+          <input
+            type="text"
+            id="edit-descr"
+            class="modal-price"
+            placeholder="edit price"
+          />
+          <input
+            type="text"
+            id="edit-image"
+            class="modal-img"
+            placeholder="edit image URL"
+          />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button
+          type="button"
+          data-bs-dismiss="modal"
+          class="save"
+          id="btn-save-edit"
+        >
+          Save changes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal window for edit ends -->
+
+<!-- pagination start -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="prev">
+      <a class="page-link" href="#">Previous</a>
+    </li>
+    <div class="pagination-list"></div>
+
+    <li class="next"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+<!-- pagination ends -->

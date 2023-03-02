@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&family=Titillium+Web:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  /* linear-gradient(to right, #434343 0%, black 100%); */
+  background-image: url(https://img.freepik.com/premium-photo/dark-wood-grain-background-textured-wooden-board-frame-with-empty-copy-space-web-design-advertis_124507-10826.jpg);
+  backdrop-filter: blur(3px);
+  background-repeat: initial;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+
+hr {
+  width: 100vw;
+}
+/* header */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 0 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  height: 60px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  gap: 50px;
+}
+
+.nav__item a {
+  font-family: "";
+  color: #fdfdfd;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.logo img {
+  width: 230px;
+  height: 100px;
+  color: #fdfdfd;
+}
+
+.search[type="text"] {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #333;
+  outline: none;
+}
+
+.search::placeholder {
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #222;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #fff5b0;
+  color: #222;
+}
+
+/* hero */
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  color: rgba(0, 0, 0, 1);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.main-text {
+  width: 650px;
+  text-align: center;
+}
+
+.text-title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+.title-description {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #fdfdfd;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+#btn-login {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #222;
+  background-color: #fff5b0;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+}
+#btn-login:hover {
+  background-color: #222;
+  color: #fefefe;
+}
+
+.categories-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  filter: brightness(70%);
+}
+
+.categories-card p {
+  color: #fefefe;
+  width: 200px;
+  text-align: center;
+}
+
+/* product page */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 300px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-img {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.card-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-artist {
+  margin: 5px 0;
+}
+
+.card-rating {
+  margin-top: 10px;
+}
+
+.card-rating label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/16/16666.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.card-rating input[type="radio"] {
+  display: none;
+}
+
+.card-rating input[type="radio"]:checked + label {
+  color: white;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/56/56786.png");
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+}
+.footer {
+  height: 400px;
+  display: flex;
+  background-color: #222222d8;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.footer_text {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+}
+hr {
+  color: white;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  color: #fff;
+  margin-top: 120px;
+  margin-left: 80px;
+}
+
+.soc_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 140px;
+}
+.steam img {
+  width: 35px;
+}
+.end {
+  color: #fff;
+  opacity: 0.1;
+  align-self: flex-end;
+}
