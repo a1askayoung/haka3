@@ -3,66 +3,80 @@
     {
       "id": 1,
       "name": "gibson",
-      "price": 300,
+      "price": 1300,
       "description": "gibson guitar original material",
       "image": "https://i.pinimg.com/564x/53/a3/7a/53a37afac132d5df19b2450994f9020a.jpg",
       "comment": ""
     },
     {
       "id": 2,
-      "name": "gibson",
-      "price": 300,
+      "name": "marshall speaker",
+      "price": 890,
       "description": "gibson guitar original material",
       "image": "https://i.pinimg.com/564x/6c/ef/b8/6cefb87777e04ef0be3d76d5f4ad26c0.jpg",
       "comment": ""
     },
     {
       "id": 3,
-      "name": "gibson",
-      "price": 300,
+      "name": "casio piano",
+      "price": 23000,
       "description": "gibson guitar original material",
       "image": "https://i.pinimg.com/564x/b1/96/9a/b1969a1a4c8dfcbc43013f30bbe61e1b.jpg",
       "comment": ""
     },
     {
       "id": 4,
-      "name": "gibson",
-      "price": 300,
+      "name": "saxaphon",
+      "price": 5000,
       "description": "gibson guitar original material",
       "image": "https://i.pinimg.com/564x/06/2e/88/062e88d0c1c8004e7a9ea14ab8af27d6.jpg",
+      "comment": ""
+    },
+    {
+      "id": 5,
+      "name": "kawai",
+      "price": 7300,
+      "description": "gibson guitar original material",
+      "image": "https://i.pinimg.com/564x/b5/df/23/b5df2359243ce82ed1e56384a26ee9c2.jpg",
       "comment": ""
     }
   ],
   "comments": [
     {
       "id": 1,
-      "commentary": "",
+      "commentary": "hi",
       "like": 0,
       "dislike": 0
     },
     {
-      "commentary": "sdfds",
+      "commentary": "что за бархотные тяги",
       "like": 0,
       "dislike": 0,
       "id": 6
     },
     {
-      "commentary": "dsfsdlfsdsdfsk;",
+      "commentary": "дорого",
       "like": 0,
       "dislike": 0,
       "id": 7
     },
     {
-      "commentary": "sdfskd;slkf",
+      "commentary": "great sound on marshall speakers",
       "like": 0,
       "dislike": 0,
       "id": 8
     },
     {
-      "commentary": "sdfks;dlskdf",
+      "commentary": "my favorite store",
       "like": 0,
       "dislike": 0,
       "id": 9
+    },
+    {
+      "commentary": "efaft",
+      "like": 0,
+      "dislike": 0,
+      "id": 10
     }
   ]
 }

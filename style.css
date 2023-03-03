@@ -59,6 +59,11 @@ hr {
   font-family: "";
   color: #fdfdfd;
   text-transform: uppercase;
+  transition: 0.2s linear;
+}
+
+.nav__item a:hover {
+  border-bottom: 3px solid #fff5b0;
 }
 
 .logo {
@@ -773,6 +778,10 @@ input[type="submit"]:hover {
   width: 3vh;
   background-color: #000;
   border-radius: 50%;
+}
+
+.comm-text p {
+  color: #fefefe;
 }
 
 .likes {

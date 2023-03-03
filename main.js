@@ -231,6 +231,11 @@ document.addEventListener("click", (e) => {
     alert("only admin can delete products");
   }
 });
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn-edit")) {
+    alert("only admin can delete products");
+  }
+});
 // обработчик события для авторизации
 
 loginBtn.addEventListener("click", () => {
