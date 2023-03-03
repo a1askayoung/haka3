@@ -26,10 +26,10 @@
                   <a href="#">Products</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#">Contact us</a>
+                  <a href="#">Review</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#"></a>
+                  <a href="#">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -40,7 +40,9 @@
                 class="search"
                 placeholder="search"
               />
-              <button class="btn" id="btn-search">search</button>
+              <a href="#product-list" class="">
+                <button class="btn" id="btn-search">search</button>
+              </a>
             </div>
           </div>
         </nav>
@@ -109,25 +111,146 @@
         </div>
       </div>
     </section>
+    <!-- CRUD admin panel -->
+    <div class="admin-panel">
+      <div class="content">
+        <h1>Admin panel</h1>
+        <form id="add-form">
+          <form id="add-form" class="add-form">
+            <input type="text" class="inp" placeholder="title" id="name" />
+            <input type="text" class="inp" placeholder="price" id="price" />
+            <input
+              type="text"
+              class="inp"
+              placeholder="description"
+              id="desc"
+            />
+            <input type="text" class="inp" placeholder="image URL" id="image" />
+            <button class="btn">Add product</button>
+          </form>
+        </form>
+      </div>
+    </div>
+
+    <!-- product list for rendering us adding products -->
 
     <!-- Products -->
-    <section class="page">
-      <div class="container">
+    <div id="product-list"></div>
 
-        <div class="card list"></div>
+    <!-- form to add product ends -->
 
+    <!-- modal window for edit starts -->
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close">X</button>
+          </div>
+          <div class="modal-body">
+            <div class="admin">
+              <input
+                type="text"
+                id="edit-name"
+                placeholder="измените название"
+              />
+              <input
+                type="text"
+                id="edit-descr"
+                placeholder="измените описание"
+              />
+              <input type="text" id="edit-price" placeholder="измените цену" />
+              <input
+                type="text"
+                id="edit-image"
+                placeholder="измените URL аватара"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close-btn">Close</button>
+            <button type="button" id="btn-save-edit">Save changes</button>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+    <!-- modal window for edit ends -->
+
+    <!-- modal window for authorization-->
+    <div class="modal2">
+      <div class="modal-dialog2">
+        <div class="modal-content2">
+          <div class="modal-body2">
+            <div class="admin">
+              <div class="modal-header2">
+                <button type="button" class="btn-close2">X</button>
+              </div>
+              <input type="text" id="login" placeholder="User name" />
+              <input type="password" id="pass" placeholder="Password" />
+            </div>
+          </div>
+          <div class="modal-footer2">
+            <button type="button" class="btn" id="btn-send-pass">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <div class="container">
+      <nav class="pag">
+        <ul class="pagination">
+          <li class="page-item prev">
+            <a class="page-link" href="#">Previous</a>
+          </li> -->
+    <!-- container for pages -->
+    <!-- <div class="pagination-list"></div>
+
+          <li class="page-item next"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div> -->
+
+    <!-- commentaries -->
+    <div class="container">
+      <div class="comment-box">
+        <div class="comment-list"></div>
+        <form class="send-comment">
+          <div class="comment">
+            <input
+              type="text"
+              placeholder="напишите комментарий"
+              class="add-comment"
+            />
+            <button class="btn btn-send">
+              <img
+                class="arrow"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Feather-arrows-arrow-right.svg/1200px-Feather-arrows-arrow-right.svg.png"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer>
       <div id="contact" class="footer">
         <div class="container">
           <div class="footer-item">
-            <p class="footer_text">here you can find me</p>
-            <div class="soc_links"></div>
+            <p class="footer_text">here you can find us</p>
+            <div class="soc_links">
+              <a href="#" target="_blank"
+                ><img src="img/Facebook.png" alt=""
+              /></a>
+              <a href="#" target="_blank"
+                ><img src="img/bxl-instagram.png" alt=""
+              /></a>
+              <a href="#" target="_blank"
+                ><img src="img/Twitter.png" alt=""
+              /></a>
+            </div>
 
-            <p class="end">© d4rax, Inc. 2023</p>
+            <p class="end">© MStore, Inc. 2023</p>
           </div>
         </div>
       </div>
@@ -135,100 +258,3 @@
     <script src="./main.js"></script>
   </body>
 </html>
-
-<form id="add-form" class="add-form">
-  <h2>Admin panel</h2>
-  <input
-    type="text"
-    class="mb-2 w-50 form-control inp"
-    placeholder="title"
-    id="name"
-  />
-  <input
-    type="text"
-    class="mb-2 w-50 form-control inp"
-    placeholder="price"
-    id="price"
-  />
-  <input
-    type="text"
-    class="mb-2 w-50 form-control inp"
-    placeholder="description"
-    id="desc"
-  />
-  <input
-    type="text"
-    class="mb-2 w-50 form-control inp"
-    placeholder="image URL"
-    id="image"
-  />
-
-  <button>Add product</button>
-</form>
-<!-- form to add product ends -->
-
-<!-- product list for rendering us adding products -->
-<div id="products-list" class="d-flex flex-wrap justify-content-center"></div>
-
-<!-- modal window for edit starts -->
-<div class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="d-flex flex-column w-100 align-items-center admin">
-          <h2>Edit product</h2>
-          <input type="text" id="" class="modal-name" placeholder="edit name" />
-          <input
-            type="text"
-            id="edit-price"
-            class="modal-desc"
-            placeholder="edit description"
-          />
-          <input
-            type="text"
-            id="edit-descr"
-            class="modal-price"
-            placeholder="edit price"
-          />
-          <input
-            type="text"
-            id="edit-image"
-            class="modal-img"
-            placeholder="edit image URL"
-          />
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="close" data-bs-dismiss="modal">
-          Close
-        </button>
-        <button
-          type="button"
-          data-bs-dismiss="modal"
-          class="save"
-          id="btn-save-edit"
-        >
-          Save changes
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- modal window for edit ends -->
-
-<!-- pagination start -->
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="prev">
-      <a class="page-link" href="#">Previous</a>
-    </li>
-    <div class="pagination-list"></div>
-
-    <li class="next"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
-<!-- pagination ends -->
